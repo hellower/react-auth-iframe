@@ -10,7 +10,7 @@ export default class extends React.Component {
 		const { token, src, type } = this.props
 
 		const method = "GET"
-		const authorization = `Bearer ${token}`
+		const authorization = `Basic ${token}`
 		const headers = new Headers({ authorization, type })
 		const options = { method, headers }
 
